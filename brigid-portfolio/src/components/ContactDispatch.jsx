@@ -125,7 +125,7 @@ export default function ContactDispatch() {
                   GitHub ↗
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/brigid-mukami-434219313/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-signal"

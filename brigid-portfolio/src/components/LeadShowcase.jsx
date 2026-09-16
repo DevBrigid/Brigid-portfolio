@@ -17,53 +17,26 @@ export default function LeadShowcase() {
         </h2>
 
         {/* Editorial Screenshot Container */}
-        <div className="group relative mb-6 overflow-hidden border-2 border-ink bg-neutral-100">
+        <div className="group relative mb-6 overflow-hidden border-2 border-ink bg-neutral-900 shadow-[4px_4px_0px_0px_var(--color-ink)]">
           <div className="absolute top-3 left-3 z-10 bg-ink px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-paper">
             SYS // PREVIEW 01
           </div>
 
-          {/* Graphical UI Placeholder */}
-          <div className="relative flex h-60 sm:h-80 w-full flex-col items-center justify-center border-b-2 border-ink bg-neutral-200 p-6 transition-all duration-500 group-hover:bg-neutral-100">
-            {/* Blueprint Grid Background Pattern */}
-            {/* <img
-                    src="/spacer-preview.png"
-                    alt="Spacer platform dashboard preview"
-                    className="h-full w-full object-cover object-top grayscale contrast-115 transition-all duration-500 group-hover:grayscale-0 group-hover:scale-[1.02]"
-                /> */}
-            <div
-              className="absolute inset-0 opacity-20"
-              style={{
-                backgroundImage:
-                  "linear-gradient(#14120F 1px, transparent 1px), linear-gradient(90deg, #14120F 1px, transparent 1px)",
-                backgroundSize: "24px 24px",
-              }}
+          {/* Real Screenshot Preview */}
+          <div className="relative h-64 sm:h-96 w-full overflow-hidden border-b-2 border-ink bg-neutral-950">
+            <img
+              src="/dashboard.png"
+              alt="Spacer platform dashboard preview"
+              className="h-full w-full object-cover object-top grayscale contrast-115 transition-all duration-700 ease-out group-hover:scale-[1.02] group-hover:grayscale-0"
             />
-            
-            {/* Mock Dashboard Wireframe */}
-            <div className="relative z-10 w-full max-w-md border-2 border-ink bg-paper p-4 shadow-[4px_4px_0px_0px_var(--color-ink)]">
-              <div className="mb-3 flex items-center justify-between border-b border-ink/20 pb-2">
-                <span className="font-mono text-[10px] font-bold uppercase text-signal">
-                  ● SPACER DASHBOARD v1.0
-                </span>
-                <span className="font-mono text-[10px] text-ink/60">LIVE CLOUD</span>
-              </div>
-              <div className="space-y-2 font-mono text-[11px] text-ink/80">
-                <div className="flex justify-between bg-neutral-100 p-1.5">
-                  <span>ROOM 04 [CONFERENCE]</span>
-                  <span className="font-bold text-wire">RESERVED</span>
-                </div>
-                <div className="flex justify-between bg-neutral-100 p-1.5">
-                  <span>STUDIO A [SOUND STAGE]</span>
-                  <span className="font-bold text-signal">OCCUPIED</span>
-                </div>
-              </div>
-            </div>
+            {/* Ink Wash Texture Overlay */}
+            <div className="pointer-events-none absolute inset-0 bg-ink/10 transition-opacity duration-300 group-hover:opacity-0" />
           </div>
 
           {/* Under-Image Metadata Rail */}
-          <div className="flex justify-between bg-paper px-3 py-1.5 font-mono text-[11px] text-ink/70">
+          <div className="flex flex-wrap items-center justify-between gap-2 bg-[#FAF7EE] px-4 py-2 font-mono text-[11px] text-ink/70">
             <span>INTERFACE: ROLE-BASED WORKSPACE PORTAL</span>
-            <span>POSTGRESQL // FASTAPI REST API</span>
+            <span className="font-semibold text-ink">POSTGRESQL // FASTAPI REST API</span>
           </div>
         </div>
 
