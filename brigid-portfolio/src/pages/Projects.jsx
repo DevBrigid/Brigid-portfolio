@@ -67,7 +67,7 @@ export default function Projects() {
               {filteredProjects.map((project, idx) => (
                 <article
                   key={project.id}
-                  className={`flex flex-col justify-between p-6 sm:p-10 ${
+                  className={`group flex flex-col justify-between p-6 sm:p-10 ${
                     idx % 2 === 0 ? "bg-paper" : "bg-[#FAF7EE]"
                   } ${idx % 2 === 0 ? "md:border-r-4 md:border-ink" : ""} ${
                     idx >= 2 ? "md:border-t-4 md:border-ink" : ""
@@ -95,6 +95,27 @@ export default function Projects() {
                     <p className="mt-1 font-mono text-xs font-bold uppercase text-ink/70">
                       {project.tagline}
                     </p>
+
+                    {/* Project Visual Container */}
+                    {project.image && (
+                      <div className="relative my-5 overflow-hidden border-2 border-ink bg-neutral-900 shadow-[4px_4px_0px_0px_var(--color-ink)]">
+                        <div className="absolute top-2.5 left-2.5 z-10 bg-ink px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-paper">
+                          FIGURE // {project.id.toUpperCase()}
+                        </div>
+                        <div className="h-48 sm:h-56 w-full overflow-hidden bg-neutral-950">
+                          <img
+                            src={project.image}
+                            alt={project.title}
+                            referrerPolicy="no-referrer"
+                            className="h-full w-full object-cover grayscale contrast-115 transition-all duration-700 ease-out group-hover:scale-[1.03] group-hover:grayscale-0"
+                          />
+                        </div>
+                        <div className="flex justify-between border-t-2 border-ink bg-[#FAF7EE] px-3 py-1 font-mono text-[10px] text-ink/70">
+                          <span>ARCHIVE ARTIFACT</span>
+                          <span>{project.year}</span>
+                        </div>
+                      </div>
+                    )}
 
                     {/* Summary */}
                     <p className="mt-4 font-body text-base leading-relaxed text-ink/90">

@@ -78,7 +78,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-paper text-ink selection:bg-flag selection:text-ink">
       <Masterhead
-        status="Open to Junior Software Engineer Roles"
+        status="Open to Software Engineer Roles"
         dispatchTag="DOSSIER // CREDENTIALS & RECORD"
       />
 
@@ -96,26 +96,6 @@ export default function About() {
               Software engineering graduate with hands-on experience building full-stack web applications,
               designing relational databases, and automating operational reporting pipelines.
             </p>
-          </div>
-        </section>
-
-        {/* Lead Dossier: BroadSheet Core Principle Manifesto */}
-        <section className="border-b-4 border-ink bg-[#FAF7EE] px-6 py-12 sm:px-12 sm:py-16">
-          <div className="mx-auto max-w-5xl">
-            <div className="mb-3 inline-block bg-ink px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-widest text-paper">
-              // CORE PRINCIPLE
-            </div>
-            <blockquote className="font-display text-3xl font-black uppercase leading-tight text-ink sm:text-5xl">
-              &ldquo;Build reliable software: clean domain boundaries, rigorous tests, and robust data integrity.&rdquo;
-            </blockquote>
-            <p className="mt-4 max-w-3xl font-body text-base text-ink/80 leading-relaxed sm:text-lg">
-              Focusing on architectures that minimize technical debt, survive edge cases, and stay straightforward to maintain.
-            </p>
-
-            <div className="mt-8 flex items-center justify-between border-t-2 border-ink pt-4 font-mono text-xs text-ink/60 uppercase">
-              <span>ENGINEERING PHILOSOPHY // RECORD 01</span>
-              <span>STANDARDS & DOMAIN DESIGN</span>
-            </div>
           </div>
         </section>
 
@@ -398,9 +378,6 @@ export default function About() {
                     <span className="font-semibold text-ink/60">
                       VERIFICATION: OFFICIAL
                     </span>
-                    <span className="bg-ink px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider text-paper">
-                      VIEW ONLY // AUTHENTICATED
-                    </span>
                   </div>
                 </article>
               ))}
@@ -415,7 +392,7 @@ export default function About() {
               // CLASSIFIED DIRECTORY
             </div>
             <h2 className="mb-8 font-display text-4xl font-black uppercase tracking-tight text-ink sm:text-5xl">
-              Technical Tooling & Stack
+              Technical Stack
             </h2>
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
