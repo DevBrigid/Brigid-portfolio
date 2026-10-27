@@ -229,32 +229,32 @@ export default function About() {
                     Nairobi, Kenya
                   </div>
                   <div className="mt-4 inline-block border border-ink bg-flag px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-ink">
-                    DATA ANALYST INTERN
+                    IT INTERN
                   </div>
                 </div>
 
                 <div className="border-t-2 border-ink pt-4 md:col-span-8 md:border-t-0 md:border-l-2 md:pl-6 md:pt-0">
                   <h3 className="font-display text-2xl font-black uppercase text-ink">
-                    Junior Data Analyst Intern
+                    IT Intern
                   </h3>
 
                   <ul className="mt-4 space-y-3 font-body text-base leading-relaxed text-ink/90">
                     <li className="flex items-start gap-2">
                       <span className="font-mono font-bold text-signal">&gt;</span>
                       <span>
-                        <strong className="text-ink">CRM/ERP Data Management in Dynamics 365:</strong> Managed, updated, and validated structured project and operational records within Microsoft Dynamics 365, ensuring high data accuracy and standardized metadata across system databases.
+                        <strong className="text-ink">Microsoft Dynamics 365:</strong> Gained hands-on exposure to its CRM/ERP modules and learned how they structure and link project, customer, and operational records.
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="font-mono font-bold text-signal">&gt;</span>
                       <span>
-                        <strong className="text-ink">Power BI Dashboard Development:</strong> Integrated data streams from Microsoft Dynamics 365 and Excel into Power BI, designing interactive visual dashboards that streamlined tracking of key project metrics and reduced manual reporting time by 30%.
+                        <strong className="text-ink">Structured Data Entry:</strong> Implemented structured data-entry processes within the platform to improve consistency in day-to-day data handling.
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="font-mono font-bold text-signal">&gt;</span>
                       <span>
-                        <strong className="text-ink">Data Cleaning & Automation:</strong> Automated data cleanup pipelines using Power Query and validation scripts, ensuring 100% dataset consistency before dashboard integration.
+                        <strong className="text-ink">Basic Automation:</strong> Set up basic automation workflows that reduced manual effort in day-to-day data handling.
                       </span>
                     </li>
                   </ul>
@@ -262,10 +262,9 @@ export default function About() {
                   <div className="mt-6 flex flex-wrap gap-2 font-mono text-[11px] uppercase">
                     {[
                       "Microsoft Dynamics 365",
-                      "Power BI",
-                      "Power Query",
-                      "Data Validation",
-                      "Excel",
+                      "CRM/ERP",
+                      "Structured Data Entry",
+                      "Workflow Automation",
                     ].map((t) => (
                       <span
                         key={t}
