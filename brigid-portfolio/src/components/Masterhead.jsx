@@ -49,7 +49,7 @@ export default function Masterthead({ status = "Available for roles" }) {
 
         <div>
             <a
-                href="/Brigid_Mukami_Resume.pdf"
+                href="/Brigid Mukami CV.pdf"
                 download="Brigid_Mukami_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
